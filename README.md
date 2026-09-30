@@ -8,7 +8,7 @@ A selection of my custom container preparation scripts, starting with the steps 
 
 #### config
 
-Not in source control.  It should be created and populated automatically by [step1_postgres_setup.bash](step1_postgres_setup.bash)
+Not in source control.  It should be created and populated automatically by [step1_postgres_setup.sh](step1_postgres_setup.sh)
 
 #### containerfiles
 
@@ -16,9 +16,9 @@ Not in source control.  It should be created and populated automatically by [ste
 
 #### lib
 
-[definitions.bash](lib/definitions.sh)
+[definitions.sh](lib/definitions.sh)
 
-[postgres_setup_helpers.bash](lib/postgres_setup_helpers.sh)
+[postgres_setup_helpers.sh](lib/postgres_setup_helpers.sh)
 
 ---
 
@@ -26,7 +26,7 @@ Not in source control.  It should be created and populated automatically by [ste
 
 #### 1. Setup
 
-First, run the script [step1_postgres_setup.bash](step1_postgres_setup.bash)
+First, run the script [step1_postgres_setup.sh](step1_postgres_setup.sh)
 
 After completion, the contents of the [config](config/) directory should appear.
 
@@ -34,11 +34,11 @@ Obs: if you execute the script again, the files will be renamed and new ones gen
 
 ### 2. Build
 
-[step2_postgres_build.bash](step2_postgres_build.bash) should create a container image based on the [Containerfile](containerfiles/Containerfile-alpine-postgres-18_6-experimental) 
+[step2_postgres_build.sh](step2_postgres_build.sh) should create a container image based on the [Containerfile](containerfiles/Containerfile-alpine-postgres-18_6-experimental) 
 
 ### 3. Compose up
 
-Finally, you may wish to start it: [step3_postgres_compose_up.bash](step3_postgres_compose_up.bash)
+Finally, you may wish to start it: [step3_postgres_compose_up.sh](step3_postgres_compose_up.sh)
 
 ---
 

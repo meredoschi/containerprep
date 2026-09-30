@@ -32,11 +32,11 @@ After completion, the contents of the [config](config/) directory should appear.
 
 Obs: if you execute the script again, the files will be renamed and new ones generated.
 
-### 2. Build
+#### 2. Build
 
 [step2_postgres_build.sh](step2_postgres_build.sh) should create a container image based on the [Containerfile](containerfiles/Containerfile-alpine-postgres-18_6-experimental) 
 
-### 3. Compose up
+#### 3. Compose up
 
 Finally, you may wish to start it: [step3_postgres_compose_up.sh](step3_postgres_compose_up.sh)
 

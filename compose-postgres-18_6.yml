@@ -1,0 +1,11 @@
+# Marcelo Eduardo Redoschi - September 2026
+services:
+  postgres:
+    image: postgres-18_6-experimental:latest
+    env_file: ../containers/config/postgres-18_6-container.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_experimental_data:/var/lib/postgresql/18/docker
+volumes:
+  postgres_experimental_data: {}
